@@ -6,7 +6,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>You are the CSS to my HTML</title>
+  <title>Acceptance Test Anatomy - You are the CSS to my HTML</title>
   <meta name="author" content="Jingyuan Wang">
 
   
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jingyuan-wang.github.io/">
+  <link rel="canonical" href="http://jingyuan-wang.github.io/blog/2017/04/18/acceptance-test-anatomy/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="You are the CSS to my HTML" type="application/atom+xml">
@@ -79,15 +79,12 @@ MathJax.Hub.Config({
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2017/04/18/acceptance-test-anatomy/">Acceptance Test Anatomy</a></h1>
+      <h1 class="entry-title">Acceptance Test Anatomy</h1>
     
     
       <p class="meta">
@@ -103,7 +100,7 @@ MathJax.Hub.Config({
   </header>
 
 
-  <div class="entry-content"><h1 id="section">关于验收测试的剖析</h1>
+<div class="entry-content"><h1 id="section">关于验收测试的剖析</h1>
 
 <p>原文地址：https://gojko.net/2010/06/16/anatomy-of-a-good-acceptance-test/</p>
 
@@ -171,125 +168,46 @@ MathJax.Hub.Config({
 
 <p>FitNesse因为这些残破不堪的测试案例而声名狼藉。Concordion（译注：<a href="http://concordion.org/">Concordion</a>是一种验收测试的框架）由此应运而生。最近的工作坊当中，也有一些人提出使用Given-When-Then结构的<a href="https://cucumber.io/">Cucumber</a>能够更好的预防这些问题的产生。我不这么认为。这跟工具无关——人们有可能使用任何工具来进行这种糟糕的测试设计，同样，他们也可以使用FitNesse做出又好又干净的测试。我认为，指出FitNesse的基础案例如此糟糕的事实，这于事无补，问题的关键不在于工具，而在于我们所付出的过程和精力，必须要让测试变得容易理解。有趣的是，让测试变得干净漂亮花不了太多精力，但是它带来的价值却远远不止如此。</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jingyuan Wang</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2017-04-18T19:06:21+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>18</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>7:06 pm</span></time>
+      
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2017/04/18/progressive-estimation-scale/">Progressive Estimation Scale</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2017-04-18T14:58:08+08:00'><span class='date'><span class='date-month'>Apr</span> <span class='date-day'>18</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>2:58 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1 id="section">渐进式估算尺</h1>
-
-<p>原文链接：http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html</p>
-
-<p>作者：Alex Yakyma</p>
-
-<p><em>在本文中，我们将会讨论为什么渐进式的估算尺（Progressive Estimation Scale）——例如敏捷团队常用的斐波那契数列，比线性的估算尺更为有效，在为团队衡量backlog的故事的大小时，呈现更多信息。我们将会用到信息理论的一些基本原则来得到结论，同时，也会形成一个针对“归一化的估算基准”的假设。</em></p>
-
-<p>在敏捷方法中，我们常常能看到大家使用“渐进式”估算尺对backlog的故事进行估算。最常见的方法是<em>修正过的斐波那契数列：0, ½, 1, 2, 3, 5, 8, 13, 20, 40, 100</em>。还有一种不太常见的估算尺，是XP（译注：极限编程）的拥护者们所倡导的：<em>0, 1, 2, 4, 拆分</em> （本文中我们且将这种估算尺称为<em>XP尺</em>）。之所以称之为<em>渐进式</em>，就是为了说明，其价值的增长速度比线性增长更快。所以我们常常也会称这类估算尺（虽然通常情况下并不是100%准确）为<em>指数式</em>估算尺。</p>
-
-<p>事实上，XP尺本身就是指数的，而斐波那契数列与函数 $f(x)=1.6^{x-1}$ 次方所定义的范围大致相当。参考下图：</p>
-
-<p><img src="http://4.bp.blogspot.com/-iVp2BxSk4Yc/T7QOuWzzRhI/AAAAAAAAABM/nREHx0NKwoU/s1600/Approximating+Fibonacci+with+the+Exponent.PNG" alt="figure 1" /></p>
-
-<p><em>图1. 修正过的斐波那契数列的的数值范围与指数函数大致相当</em></p>
-
-<p>在这里作此说明的目的，是为了表示这两种估算尺都具有同样程度的精确性，我们称之为“指数级”精确度。</p>
-
-<p>话虽如此，还是让我们先反问自己：为什么要使用指数级的估算尺？众所周知，已经有成千上万的敏捷团队成功地应用了这类估算尺，是什么使得指数尺如此堪以大用？过去，我们面对此类问题，通常的回答是——提出backlog里的故事越大（比如<em>N</em>个故事点），那么说出<em>N</em>和<em>N-1</em>之间的差异就越难。这确实是正确的，然而这个回答本身并不是一个基本的公理，它只是基于一些通用原则的推论。就让我们来看一看这些原则。</p>
-
-<h3 id="section-1">信息理论视角</h3>
-
-<p>让我们换一个角度提出问题，假设我们（非常粗略地）知道backlog里故事<em>U</em>的大小不超过<em>L</em>个单位（可以是故事点，也可以是人·天，在这里这点并不重要），但是它可能是<em>0</em>到<em>L</em>的任意值，并且所有的可能性均等。假设，有一种估算技术，允许我们以<em>P</em>的绝对精确度估算出<em>U</em>的大小，那么我们可以看看，<em>运用这种技术能得到多少关于故事U大小的信息</em>。</p>
-
-<p><img src="http://1.bp.blogspot.com/-YhVER_2Y_Yc/T7QPgdVnOMI/AAAAAAAAABc/q47FM32UeA0/s1600/Estimation+Precision.PNG" alt="figure 2" /></p>
-
-<p><em>图2. 符号说明：U是backlog里的任意一张故事卡；L是backlog里所有卡片可能大小的最大值；P是估算的绝对精度；横轴上的连着U的点代表故事U的大小。</em></p>
-
-<p>根据<em>信息理论</em>的基础知识我们知道，实验A中关于实验B的信息（也叫两个实验的<em>互信息</em>，详细可参考<a href="https://en.wikipedia.org/wiki/Mutual_information">Wikipedia</a>）可以表示如下：</p>
-
-<script type="math/tex; mode=display">I(A,B) = H(B) - H_A(B)</script>
-
-<p>这里，<code>H(B)</code>是<em>信息熵</em>，也就是实验B的不确定程度。<code>HA(B)</code>是实验A发生后，实验B的<em>熵</em>（也称为<em>条件熵</em>）。所以现在可以很容易将实验A中包含的的信息量解释为它为实验B所减少的不确定度。</p>
-
-<p>现在，让我们把这个公式应用于我们的案例。我们也有两个“实验”，实验 <em>(B)</em> 是确定故事U的准确大小，实验 <em>(A)</em> 是应用我们的估算技术，从而在一定程度上减少不确定度（例如，获得一些信息）。避免展开数学深度的计算，这里我们仅需注意到，通过应用<em>香农定律</em>（实际上是互信息的一种定义），我们可以得到：</p>
-
-<script type="math/tex; mode=display">I(A,B) = log(L/P)</script>
-
-<p>这里对数的底数并不是非常重要，它可以是符合对数简单特征（参考<a href="https://en.wikipedia.org/wiki/Logarithm#Change_of_base">Wikipedia</a>）的任意数量（大于<em>1</em>），但是通常人们会使用2作为底数，从计算机的角度来看，这倒是非常有意义，因为最终我们所有的信息都是以<em>二进制</em>形式存储的。</p>
-
-<p>后面这个方程给出了一个非常有意思的结果：相比估算精度的提升，我们通过估算获得信息量的提升要慢得多。更具体地说，它是一个对数函数式的增长。通过下图这个对数函数图，我们就可以看出为什么“少量的估算事半功倍，而大量的估算事倍功半。”</p>
-
-<p><img src="http://4.bp.blogspot.com/-zjnIclCp94I/T7QPU8Kx7qI/AAAAAAAAABU/nshBmneor7Q/s1600/logarithm.PNG" alt="logarithm" /></p>
-
-<p><em>图3. <code>故事大小的信息</code>的对数行为，可作为估算过程的结果。横轴代表相对精度（或者更精确的说，代表了(L/P)的值），纵轴代表信息量（以比特计）。</em></p>
-
-<p>所以最终，使用指数（或近指数）估算尺就变得非常合乎逻辑了——<strong>有价值的信息增加得更快</strong>。确实，任意函数 $f(x)=a^{log_bx}$ 的增长肯定比 $log_bx$ 自身要快(a和b都大于1）。在理想环境下——现实中我们一定不会做此期待，当 $a=b$ 时，这个函数就变成了线性函数：$f(x) = x$。但是既然我们不会去声明这是必须的条件，那么我们通常就会说“信息增加得更快”，而不是“线性增加信息”。</p>
-
-<h3 id="section-2">归一化假设</h3>
-
-<p>另一个有趣的问题是，考虑到大多数团队都在使用斐波那契数列作为估算尺，他们是怎么确保他们“校正后的信息曲线”（例如，函数 $f(x)=a^{log_bx}$ 对应的曲线）能够增长得更快，从而使其比线性尺更加有用呢？显然，“信息曲线”的对数行为是可以肯定的，但是，如何在实际中找到确切的对数底数却不是件容易的事。虽说我们可以寄希望于团队通过自身经验能够找到斐波那契数列的正确用法，从而有效地获得信息。那么，什么是“正确用法”呢？</p>
-
-<p>为了进一步简化分析（如前文所作的分析），我们可以使用某些指数函数，而不是斐波那契数列。即便底数是固定的（例如，$f(x)=a^x$ ），我们的团队还是可以改变函数本身，通过什么方式呢？对，正是“重新调节故事点”。确实，如果我们赋予故事点新的含义，比如说，以前的2个故事点等于现在的1个故事点，那我们的函数 $f(x)$ 变成了新的函数 $g(t)=f(2x)$ , 其中 $t=2x$ 。或者反过来，$x=0.5t$。如果我们替换掉前面公式中的$x$，我们可以得到 $g(t)=b^t$ ，其中 $b$ 是 $a$ 的平方根。新的函数 $g(t)$ 又成了一个指数函数，只是底数不同而已。下图这个例子，说明了重新调节故事点所产生的影响——如果我们将以前的3个故事点变为现在的2个故事点的大小，那么“估算尺曲线”会产生什么样的变化呢？</p>
-
-<p><img src="http://2.bp.blogspot.com/-tVv8EZDhbkE/T7QQdfbQzjI/AAAAAAAAABk/_I2Cp2tpUKE/s1600/Rescaling+the+estimation+base.PNG" alt="figure 4" /></p>
-
-<p><em>图4. 重新调节故事点——将原本的3个故事点变成新的2个故事点之后，指数函数（估算函数）的底数也随之改变。图中蓝线代表原来的估算尺，红线代表新的估算尺。</em></p>
-
-<p>这就说明:</p>
-
-<blockquote>
-  <p>不断改变斐波那契数列的估算基础是一件非常有责任的事情，而这一点往往被低估。它可以让团队更趋高效的估算，当然，也有可能背道而驰。理想的估算底数只有一个，保证离它越来越近是很至关重要的。</p>
-</blockquote>
-
-<p>现在，我们可以看看一个有趣的事实，也就是许多敏捷团队都可以确认的：</p>
-
-<blockquote>
-  <p>经过一段时间之后，敏捷团队常常会“归一”，到达一个近似于斐波那契数列的估算底数——在一个两周的sprint内，团队的平均速度通常为30-60个故事点。</p>
-</blockquote>
-
-<p>当然，这也取决于团队规模，团队越小，这个数字越小；团队越大，数字也会越大。但也可能，这是团队为了更有效地管理潜在的可用信息，随着时间推移，不断优化其估算底数后的结果。基于此，我们也形成了我们的……</p>
-
-<blockquote>
-  <p><strong>归一化假设</strong>：那些随着时间推移，使其估算基准归一化的团队，很大可能已经到达了他们的最佳估算能力（从他们估算过的，backlog里的项目所获得的信息的角度来看）。换言之，他们经验性的发现了这个指数函数，使得“矫正后的信息曲线”接近线性。</p>
-</blockquote>
-
-<p>虽然看起来，要到达一个更好的估算基准，会有一段距离，但我们有了一个简单蠢笨但是可靠的方法作为开始。简单地在一个<em>sprint</em>给每个队员分配<em>8</em>个故事点，不是一个糟糕的初始估计值。事实上，考虑到上面的假设，当团队成员<em>N</em>从<em>4</em>到<em>8</em>变化时，我们得到的故事点$N×8$正好从<em>32</em>到<em>64</em>变化不等。</p>
-
-<p>想要了解更多估算基准，可以参考 （<a href="http://www.amazon.com/Agile-Software-Requirements-Enterprise-Development/dp/0321635841">Agile Software Requirements Enterprise Development</a> 第八章，敏捷估算和速率）</p>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jingyuan-wang.github.io/blog/2017/04/18/acceptance-test-anatomy/" data-via="" data-counturl="http://jingyuan-wang.github.io/blog/2017/04/18/acceptance-test-anatomy/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2017/04/18/progressive-estimation-scale/" title="Previous Post: Progressive Estimation Scale">&laquo; Progressive Estimation Scale</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -313,6 +231,7 @@ MathJax.Hub.Config({
 
   
 </aside>
+
 
     </div>
   </div>

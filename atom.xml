@@ -4,7 +4,7 @@
   <title><![CDATA[You are the CSS to my HTML]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2017-04-18T17:46:30+08:00</updated>
+  <updated>2017-04-18T17:51:14+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Jingyuan Wang]]></name>
@@ -69,7 +69,7 @@ $f(x)=1.6^{x-1}$
 <p>所以最终，使用指数（或近指数）估算尺就变得非常合乎逻辑了——<strong>有价值的信息增加得更快</strong>。确实，任意函数
 (f(x)=a^{log_bx})
 的增长肯定比
-(log_bx$)
+(log_bx)
 自身要快（(a)和(b)都大于1）。在理想环境下——现实中我们一定不会做此期待，当
 (a=b)
 时，这个函数就变成了线性函数：

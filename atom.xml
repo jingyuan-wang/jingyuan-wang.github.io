@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2017-04-18T15:00:29+08:00</updated>
+  <updated>2017-04-18T15:07:31+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -19,6 +19,10 @@
     <updated>2017-04-18T14:58:08+08:00</updated>
     <id>http://jingyuan-wang.github.io/blog/2017/04/18/progressive-estimation-scale</id>
     <content type="html"><![CDATA[<h1>渐进式估算尺</h1>
+
+<p>原文链接：<a href="http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html">http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html</a></p>
+
+<p>作者：Alex Yakyma</p>
 
 <p><em>在本文中，我们将会讨论为什么渐进式的估算尺（Progressive Estimation Scale）——例如敏捷团队常用的斐波那契数列，比线性的估算尺更为有效，在为团队衡量backlog的故事的大小时，呈现更多信息。我们将会用到信息理论的一些基本原则来得到结论，同时，也会形成一个针对“归一化的估算基准”的假设。</em></p>
 

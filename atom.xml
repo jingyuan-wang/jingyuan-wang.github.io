@@ -4,7 +4,7 @@
   <title><![CDATA[You are the CSS to my HTML]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2017-04-18T19:14:03+08:00</updated>
+  <updated>2017-04-18T19:17:43+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Jingyuan Wang]]></name>
@@ -93,7 +93,7 @@
     <link href="http://jingyuan-wang.github.io/blog/2017/04/18/progressive-estimation-scale/"/>
     <updated>2017-04-18T14:58:08+08:00</updated>
     <id>http://jingyuan-wang.github.io/blog/2017/04/18/progressive-estimation-scale</id>
-    <content type="html"><![CDATA[<h1 id="section">渐进式估算尺</h1>
+    <content type="html"><![CDATA[<h1 id="section">为什么采用渐进式估算尺</h1>
 
 <p>原文链接：http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html</p>
 

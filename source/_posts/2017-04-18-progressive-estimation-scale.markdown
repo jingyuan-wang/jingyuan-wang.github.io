@@ -17,7 +17,7 @@ categories:
 
 事实上，XP尺本身就是指数的，而斐波那契数列与函数 $f(x)=1.6^{x-1}$ 次方所定义的范围大致相当。参考下图：
 
-![figure 1](http://4.bp.blogspot.com/-iVp2BxSk4Yc/T7QOuWzzRhI/AAAAAAAAABM/nREHx0NKwoU/s1600/Approximating+Fibonacci+with+the+Exponent.PNG)
+![figure 1](/images/2017/04/Approximating_Fibonacci_with_the_Exponent.png)
 
 *图1. 修正过的斐波那契数列的的数值范围与指数函数大致相当*
 

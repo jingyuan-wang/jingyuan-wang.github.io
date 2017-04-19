@@ -124,7 +124,7 @@ MathJax.Hub.Config({
 
 <p>让我们换一个角度提出问题，假设我们（非常粗略地）知道backlog里故事<em>U</em>的大小不超过<em>L</em>个单位（可以是故事点，也可以是人·天，在这里这点并不重要），但是它可能是<em>0</em>到<em>L</em>的任意值，并且所有的可能性均等。假设，有一种估算技术，允许我们以<em>P</em>的绝对精确度估算出<em>U</em>的大小，那么我们可以看看，<em>运用这种技术能得到多少关于故事U大小的信息</em>。</p>
 
-<p><img src="http://1.bp.blogspot.com/-YhVER_2Y_Yc/T7QPgdVnOMI/AAAAAAAAABc/q47FM32UeA0/s1600/Estimation+Precision.PNG" alt="figure 2" /></p>
+<p><img src="/images/2017/04/Estimation_Precision.png" alt="figure 2" /></p>
 
 <p><em>图2. 符号说明：U是backlog里的任意一张故事卡；L是backlog里所有卡片可能大小的最大值；P是估算的绝对精度；横轴上的连着U的点代表故事U的大小。</em></p>
 
@@ -142,7 +142,7 @@ MathJax.Hub.Config({
 
 <p>后面这个方程给出了一个非常有意思的结果：相比估算精度的提升，我们通过估算获得信息量的提升要慢得多。更具体地说，它是一个对数函数式的增长。通过下图这个对数函数图，我们就可以看出为什么“少量的估算事半功倍，而大量的估算事倍功半。”</p>
 
-<p><img src="http://4.bp.blogspot.com/-zjnIclCp94I/T7QPU8Kx7qI/AAAAAAAAABU/nshBmneor7Q/s1600/logarithm.PNG" alt="logarithm" /></p>
+<p><img src="/images/2017/04/logarithm.png" alt="logarithm" /></p>
 
 <p><em>图3. <code>故事大小的信息</code>的对数行为，可作为估算过程的结果。横轴代表相对精度（或者更精确的说，代表了(L/P)的值），纵轴代表信息量（以比特计）。</em></p>
 
@@ -154,7 +154,7 @@ MathJax.Hub.Config({
 
 <p>为了进一步简化分析（如前文所作的分析），我们可以使用某些指数函数，而不是斐波那契数列。即便底数是固定的（例如，$f(x)=a^x$ ），我们的团队还是可以改变函数本身，通过什么方式呢？对，正是“重新调节故事点”。确实，如果我们赋予故事点新的含义，比如说，以前的2个故事点等于现在的1个故事点，那我们的函数 $f(x)$ 变成了新的函数 $g(t)=f(2x)$ , 其中 $t=2x$ 。或者反过来，$x=0.5t$。如果我们替换掉前面公式中的$x$，我们可以得到 $g(t)=b^t$ ，其中 $b$ 是 $a$ 的平方根。新的函数 $g(t)$ 又成了一个指数函数，只是底数不同而已。下图这个例子，说明了重新调节故事点所产生的影响——如果我们将以前的3个故事点变为现在的2个故事点的大小，那么“估算尺曲线”会产生什么样的变化呢？</p>
 
-<p><img src="http://2.bp.blogspot.com/-tVv8EZDhbkE/T7QQdfbQzjI/AAAAAAAAABk/_I2Cp2tpUKE/s1600/Rescaling+the+estimation+base.PNG" alt="figure 4" /></p>
+<p><img src="/images/2017/04/Rescaling_the_estimation_base.png" alt="figure 4" /></p>
 
 <p><em>图4. 重新调节故事点——将原本的3个故事点变成新的2个故事点之后，指数函数（估算函数）的底数也随之改变。图中蓝线代表原来的估算尺，红线代表新的估算尺。</em></p>
 

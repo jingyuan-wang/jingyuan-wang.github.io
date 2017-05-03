@@ -4,7 +4,7 @@
   <title><![CDATA[You are the CSS to my HTML]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2017-04-19T13:37:42+08:00</updated>
+  <updated>2017-05-03T11:56:31+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Jingyuan Wang]]></name>
@@ -12,6 +12,235 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A User Story Discussion]]></title>
+    <link href="http://jingyuan-wang.github.io/blog/2017/05/03/a-user-story-discussion/"/>
+    <updated>2017-05-03T11:51:40+08:00</updated>
+    <id>http://jingyuan-wang.github.io/blog/2017/05/03/a-user-story-discussion</id>
+    <content type="html"><![CDATA[<h1 id="user-story">一个<code>由浅入深</code>的User Story小分享</h1>
+
+<p>本文写作初衷来自于第一个国内交付小项目，项目Scope不大，是某公司内部一套通用的项目管理系统的首页Dashboard制作（和集成）。交付团队进场时，需求整体已经基本确定，主要的工作量集中在前端开发，以及跟客户现有的多个系统数据集成上，计划的开发周期四周。作为一个BA参与的第一个国内交付项目，尝试梳理一下这个小项目上的经验和感想，再加上新Sponsor的作业施压，便有了这篇博客。讨论的范围从User Story的原则和组成、到AC的写法，涉及少量BDD（主要是Gherkin语法）和实例化需求的分析。</p>
+
+<h2 id="user-story-1">User story原则</h2>
+<p>作为BA，大家都耳熟能详的INVEST原则，这里赘述一次是为了引出在项目中产生的疑问，熟悉这部分内容的可以直接跳到<code>疑问</code>部分。</p>
+
+<p>我们都知道，在敏捷方法下，一个好的故事应该很清晰地体现对用户或客户的价值，同时具备以下特点：</p>
+
+<h3 id="independent">Independent</h3>
+
+<p>我们要尽量避免stories之间的相互依赖，在排优先级和迭代计划的时候，依赖会导致估算和分工变得困难，因此每一个story都要尽量独立。通常我们可以使用以下方法来降低依赖：</p>
+
+<ol>
+  <li>将互相依赖的story合并成一个大的、独立的故事</li>
+  <li>换一种方式将故事进行拆分</li>
+</ol>
+
+<h3 id="negotiable">Negotiable</h3>
+
+<p>Story只是一个feature的简单描述，细节在跟客户与开发团队的讨论中不断完善。Ron Jeffries提出的User story的3C原则：Card，Communication，Confirmation一样，沟通是Story非常重要的一环，因此在story的编写过程中，<strong>文档的详尽不是我们追求的方向</strong>。</p>
+
+<blockquote>
+  <p>疑问1：实际的项目上，为了能节省跟开发沟通和确认需求的时间，也为了给开发人员提供详细的需求说明，详尽的文档（AC）反而感觉是必须的？即使是kickoff的过程中，更多也是偏向于给跟开发确认需求，而不是negotiate，Negotiable具体是在哪个层面上？</p>
+</blockquote>
+
+<h3 id="valuable">Valuable</h3>
+
+<p>User Story应该很清晰地体现对用户或客户的价值。这也是对故事排优先级的基础，比较理想的状况是让客户（或者与客户一起）进行故事的编写，这样也更容易达成Negotiable的原则。</p>
+
+<h3 id="estimable">Estimable</h3>
+
+<p>一个Story一定要是可以估算的，开发人员需要对Stories进行估算，以便于确定优先级、工作量和开发计划。一般情况下，故事拆分的粒度越细，越有利于估算的准确性。</p>
+
+<h3 id="smallsize-appropriate">Small（Size appropriate）</h3>
+
+<p>故事尽量越小越好，要确保在一个迭代以内可以完成；但也不要太小，比如小到无法在一张卡内保证有价值的交付。</p>
+
+<h3 id="testable">Testable</h3>
+
+<p>如果说用户故事的描述代表了需要交付的价值，那么验收则是对价值的验证和确认过程。因此一个故事必须是可测的，也就意味着验收标准必须是清晰客观的。例如，如果我们要编写一张提升用户体验的故事，验收标准如果是：<code>app的响应速度要很快.</code>，这个故事就是不可测的；可测的故事是：<code>当用户进行xx操作时，从xx到xxx的响应时间必须在0.1秒以内。</code></p>
+
+<hr />
+
+<h2 id="user-story-2">User Story构成</h2>
+
+<p>一个User Story通常会包含以下几个方面的内容，默认Narrative和验收标准（以下简称AC）为必需条件。一个没有明确定义出Narrative和AC的story，开发团队可以拒绝开发。除此以外，有些卡还会附上一些补充说明的部分，例如Scope、Notes、以及相应的设计图等等。</p>
+
+<h3 id="narrative">Narrative</h3>
+<p>Narrative某种意义上，就是用户故事的核心。通常包含角色、功能和商业价值三个要素。
+通常的叙述格式为：</p>
+
+<p><code>As a &lt;role&gt;, I want to &lt;activity&gt;, so that &lt;Business value&gt;</code></p>
+
+<p>中文格式对应为：</p>
+
+<p><code>作为一个&lt;角色&gt;，我想要&lt;功能&gt;，以便于&lt;商业价值&gt;</code></p>
+
+<p>例如</p>
+
+<p><code>作为一个ThoughtWorker，我想要在手机上填写Timecard，以便于我能在没有电脑时，也可以随时随地提交工时信息，确保公司能按时收回账款。</code></p>
+
+<p>格式虽然简单，但是往往也<strong>最容易被忽视</strong>。这里我个人想强调的是<code>&lt;商业价值&gt;</code>部分。面对一个进入到写卡阶段的需求，<code>&lt;角色&gt;</code>和<code>&lt;功能&gt;</code>往往都已经相对明确，BA不过是做个总结，到了<code>&lt;商业价值&gt;</code>部分，很容易觉得功能的价值当然是不言自明的，不需要太多解释，（甚至有时还会觉得写了dev也不会看），这时很容易就敷衍了事，不经思考写上一句正确的废话或是从其他卡上复制一个差不多的，草草了事。</p>
+
+<p>这样做很不好的一点是，习惯性默认了所有需求的合理性。可是需要提醒的是，需求在写卡时，其实就已经进入了验证阶段。一个连so that都写不出个所以然的需求，直接进入到开发阶段这本身就是最大的浪费。</p>
+
+<p>在紧张的开发节奏中，来自多方的复杂的压力往往推着人不断向前，很容易忽视对需求本身的深思和探究。保持在写卡时习惯性地反问<code>这样做有什么价值？能多大程度上实现原本的商业预期？可不可以不做？</code>是反思价值和需求合理性、优先级的时机。所以，重要的不是要写给他人看（当然，真正要实现敏捷，必然是需要每个人都了解商业价值的上下文），而是作为需求分析师的角色时，必须要思考的过程。</p>
+
+<blockquote>
+  <p>疑问2: 所以Narrative可以写多条么？</p>
+</blockquote>
+
+<h3 id="acceptance-criteria">Acceptance Criteria</h3>
+
+<p>AC是需求的细化和清晰化。我们都知道每一个User Story都应该是可估算、可测的。通过怎么来估算和测试呢？清晰的验收标准。</p>
+
+<p>Narrative中通常只包含功能的描述，细节的明晰和界定是在不断地沟通和思考中产生的，这些界定出来的细节要求，便构成了我们验收和测试时的对象。将这部分细节要求以一种通用的领域语言呈现出来，形成业务和开发之间的沟通桥梁，这是我理解的写AC的过程。具体怎么写，我们后面再进一步讨论。</p>
+
+<h3 id="scope">Scope</h3>
+
+<p>其实有了清晰的AC，Scope也就相应明确出来了，但是有时在一个Epic拆成不同的Stories导致Stories之间互相存有依赖或关联时，通过Scope的补充说明，可以更明确地界定出Story的上下文范围，方便理解。</p>
+
+<p>但是，一定要注意的是，Scope的说明文字不能取代沟通。</p>
+
+<h3 id="notes">Notes</h3>
+
+<p>如果说Narrative 覆盖了需求点，AC覆盖了验收的feature，若还有一些细节或说明条件需要补充，可以记作Notes。例如：<code>标题输入不能超过15字.</code></p>
+
+<h3 id="design">Design</h3>
+
+<p>不论是Hi-Fi还是Lo-Fi的Mockup，图更能说明一切，最Lo-Fi的Sketch都胜过最详尽的文字。</p>
+
+<p>在User Story里要写哪些模块，具体还可以参考myThoughtWorks上的历史讨论：</p>
+
+<hr />
+
+<h2 id="ac">怎么写AC？</h2>
+
+<p>所以，既然AC是user story里最关键的部分，AC要怎么写？在我刚进ThoughtWorks学习该怎么写AC之时，当时Buddy让我看了一些User Story的示例，发现大部分的验收标准都是以某种标准格式<code>Given...When...Then...</code>的格式写成，所以照猫画虎，AC仿佛也写得有模有样：不就是将用户的行为拆成一条条的假设场景嘛，多容易啊。但是长期以来，我都有一个疑惑：明明用一句话就可以说清楚的事情，为什么要写上这么多的废话？比如：</p>
+
+<figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">- Given 我在xxx首页
+</span><span class="line">- And 输入已注册的用户名和密码
+</span><span class="line">- When 点击登录
+</span><span class="line">- Then 进入登录后页面</span></code></pre></td></tr></table></div></figure>
+<p>这么长一串完全可以用一句人话说清楚：</p>
+
+<figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">- 用户可以使用已注册的账号密码登录网站。</span></code></pre></td></tr></table></div></figure>
+
+<p>大量的<code>Given...When...Then...</code>型AC带来的结果是，一张User Story动不动就写成一篇作文。从可读性角度来说，效果当然也不赖，从用户场景出发也可以帮助我们考虑到更全面的场景，所以虽然嫌累赘，但也不是不可以坚持。直到这次项目在邱大师的指引下，接触到了两个概念——BDD和Specification by Examples，于是豁然开朗，为什么AC要采用这样的方式来写成。在此，便需要引出一个重要概念——<strong>活文档</strong>。</p>
+
+<h4 id="section">活文档</h4>
+
+<p>引用一下《Cucumber：行为驱动开发指南》对活文档的描述：“Cucumber测试同传统的规格说明文档一样能被利益相关人阅读和编写，然而其独特的优点在于，你可以在任何时刻给他们一台计算机让测试执行，结果会告诉你测试有多准确。这意味着，你的文档不再是一种写完后就慢慢过期的东西，而成为一种能随时反映项目真实状态的活的东西。”</p>
+
+<p>Cucumber的Gherkin语法非常简单，举个例子一目了然：</p>
+
+<figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Feature: Sign up
+</span><span class="line">	Sign up should be quick and friendly.
+</span><span class="line">
+</span><span class="line">	Scenario: Successful sign up
+</span><span class="line">
+</span><span class="line">		New users should get a confirmation email and be greeted personally by the site once signed in.
+</span><span class="line">
+</span><span class="line">		Given I have chosen to sign up
+</span><span class="line">		When I sign up with valid details
+</span><span class="line">		Then I should receive a confirmation email
+</span><span class="line">		And I should see a personalized greeting message
+</span><span class="line">
+</span><span class="line">	Scenario: Duplicate email
+</span><span class="line">
+</span><span class="line">		Where someone tries to create an account for an email address that already exists.
+</span><span class="line">
+</span><span class="line">		Given I have chosen to sign up
+</span><span class="line">		But I enter an email address that has already registered
+</span><span class="line">		Then I should be told that the email is already registered
+</span><span class="line">		And I should be offered the option to recover my password</span></code></pre></td></tr></table></div></figure>
+<p>是不是很熟悉的格式？是的，如果AC能直接变成自动化测试的场景，那么所有这些人读起来略显累赘的格式便很合理了——人机都可读。因为文档直接跟程序挂钩，一旦发生变更，所有的变更会先在测试场景上变更，再变更代码以让新的测试通过，从而能自动保持文档和需求的同步，<strong>活的文档</strong>便很好理解了。</p>
+
+<blockquote>
+  <p>这时，你可能会问了：Cucumber是适用于BDD的，如果我们没有采用BDD，那么AC也有必要这样写么？我们后面再说。</p>
+</blockquote>
+
+<h4 id="specification-by-examples">Specification by Examples</h4>
+
+<p>说完格式我们再来看内容，假设我们写AC的目的是为了更好的覆盖自动化测试的场景（不管是否采用BDD，区别主要是在于测试先行还是后发生）。所有符合<code>Given...When...Then...</code>格式的内容，都可以轻松程序化么？看一个例子（这就是我在项目上写的卡）：</p>
+
+<figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">- Given: 我是已登陆p***k的项目经理
+</span><span class="line">- When: 查看项目“任务项”
+</span><span class="line">- Then: 我看到的任务项是按照*计划到期时间*的正序排列
+</span><span class="line">- And: 已过期的任务项以红色显示</span></code></pre></td></tr></table></div></figure>
+
+<p>从人的阅读理解上来讲，这确实表达出了两个关键的规则：</p>
+
+<ol>
+  <li>按照deadline的正序排列；</li>
+  <li>过期的任务标红。</li>
+</ol>
+
+<p>在跟dev们kickoff的时候，这条AC大家可以理解，也就可以顺利通过，不会产生什么疑问。可是如果将这个测试场景自动化，这可以直接挪用么？什么是时间的正序？什么样的任务项算是过期？</p>
+
+<p>这里便引申出第二个概念——实例化需求（Specification by Examples）。</p>
+
+<p>同样是上面这个例子，我们换一种表达方法：</p>
+
+<figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">- Given：我的项目上所有进行中的任务项的*计划到期时间*分别为:4月17号，4月18号，4月19号，4月20号
+</span><span class="line">- And: 今天是4月18号
+</span><span class="line">- When：查看项目“任务项”
+</span><span class="line">- Then：我看到的任务项排序从上到下为： 4月17号，4月18号，4月19号，4月20号
+</span><span class="line">- And：4月17号的任务项会标红显示已过期</span></code></pre></td></tr></table></div></figure>
+
+<p>同样是针对具体细节的描述，区别体现在：前一种方式，是细节的需求抽象之后再以概念表达出来；后者则是通过一个实例的表现来描述需求。</p>
+
+<blockquote>
+  <p>通常情况下，前一种表达会让我更有安全感，因为抽象之后的说明会更全面，更能切合我们对需求的定义和分析；而后者会让我忍不住担心：如果程序只cover了这一种测试情况怎么办（例如程序仅仅是让这项测试场景通过而不是完整实现了需求）？解决方式可以是添加多场景（具体可以参考这篇翻译的博客：），这里就先不详细展开了。</p>
+</blockquote>
+
+<p>我们可以看到实例化需求说明之后，AC就成了一条清晰的测试场景，有实例数据input，也有了应该产生的output。既能够让开发人员理解，又利于程序的编码和自动化测试。</p>
+
+<p>再回到前面的问题，难道BA写AC就应该写成这种可执行的文档么？如果我们不采用BDD的方式进行开发，还需要以这种格式写成AC么？</p>
+
+<p>实际上，如果我们翻查各种关于user story的书籍和经验博客，并没有一个人给出是的回答。在各种敏捷User Story的示例中，AC的格式并不固定（checklist就很常见），重点是从需求的角度出发，尽可能覆盖住各种场景，保持需求整体的逻辑自洽。将场景转变为可自动化测试的场景确实也不在BA的职责范畴之内，实例化需求也更多用于测试文档的编写（Cucumber本身也是一个自动化测试的框架）。可是在一个团队内，BA写完AC，QA再将需求转化为验收测试文档算不算是一种写文档的浪费？怎样才能避免团队在文档撰写上的浪费呢？<strong>比较推荐的方法是，在给每一张卡定AC的时候，由Tech Lead、QA和BA（three amigos）一起对故事卡进行沟通，从不同角度对场景进行完善，确保AC作为活文档的适用性</strong>。不管项目上是否采用BDD，我个人认为，能够在实现清晰的需求描述的同时，兼顾自动化测试友好的AC场景，对整个开发是百利无害的。</p>
+
+<blockquote>
+  <p>这篇博客虽然讨论的是User Story，但其实受BDD的影响很深，并且是基于BDD的价值的假设。然而实际上，关于BDD实践的经验我目前还很欠缺，BDD是好是坏还没有切实体验过，希望未来有机会在项目中实践吧。</p>
+</blockquote>
+
+<p>参考文档：</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Acceptance Test Anatomy]]></title>

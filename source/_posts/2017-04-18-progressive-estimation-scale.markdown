@@ -7,7 +7,7 @@ categories:
 ---
 # 为什么采用渐进式估算尺
 
-原文链接：http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html
+原文链接：<http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html>
 
 作者：Alex Yakyma
 

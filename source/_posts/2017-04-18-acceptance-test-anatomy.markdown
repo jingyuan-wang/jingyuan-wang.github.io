@@ -7,7 +7,7 @@ categories:
 ---
 # 关于验收测试的剖析
 
-原文地址：https://gojko.net/2010/06/16/anatomy-of-a-good-acceptance-test/
+原文地址：<https://gojko.net/2010/06/16/anatomy-of-a-good-acceptance-test/>
 
 作者：Gojko Adzic
 

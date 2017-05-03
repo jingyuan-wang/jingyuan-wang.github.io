@@ -10,7 +10,7 @@ categories:
 本文写作初衷来自于第一个国内交付小项目，项目Scope不大，是某公司内部一套通用的项目管理系统的首页Dashboard制作（和集成）。交付团队进场时，需求整体已经基本确定，主要的工作量集中在前端开发，以及跟客户现有的多个系统数据集成上，计划的开发周期四周。作为一个BA参与的第一个国内交付项目，尝试梳理一下这个小项目上的经验和感想，再加上新Sponsor的作业施压，便有了这篇博客。讨论的范围从User Story的原则和组成、到AC的写法，涉及少量BDD（主要是Gherkin语法）和实例化需求的分析。
 
 ## User story原则
-作为BA，大家都耳熟能详的INVEST原则，这里赘述一次是为了引出在项目中产生的疑问，熟悉这部分内容的可以直接跳到`疑问`部分。
+作为BA，大家都耳熟能详的INVEST原则，这里赘述一次是为了引出在项目中产生的疑问，熟悉这部分内容的可以直接针对`疑问`部分进行讨论。
 
 我们都知道，在敏捷方法下，一个好的故事应该很清晰地体现对用户或客户的价值，同时具备以下特点：
 
@@ -91,13 +91,13 @@ Narrative中通常只包含功能的描述，细节的明晰和界定是在不�
 
 不论是Hi-Fi还是Lo-Fi的Mockup，图更能说明一切，最Lo-Fi的Sketch都胜过最详尽的文字。
 
-在User Story里要写哪些模块，具体还可以参考myThoughtWorks上的历史讨论：
+在User Story里要写哪些模块，具体还可以参考myThoughtWorks上的历史讨论：[Where do you put acceptance criteria?](https://thoughtworks.jiveon.com/polls/1648)
 
 ***
 
 ## 怎么写AC？
 
-所以，既然AC是user story里最关键的部分，AC要怎么写？在我刚进ThoughtWorks学习该怎么写AC之时，当时Buddy让我看了一些User Story的示例，发现大部分的验收标准都是以某种标准格式`Given...When...Then...`的格式写成，所以照猫画虎，AC仿佛也写得有模有样：不就是将用户的行为拆成一条条的假设场景嘛，多容易啊。但是长期以来，我都有一个疑惑：明明用一句话就可以说清楚的事情，为什么要写上这么多的废话？比如：
+所以，既然AC是user story里最关键的部分，AC要怎么写？在我刚进ThoughtWorks学习该怎么写AC之时，当时Buddy让我看了一些User Story的示例（myTW也曾有过讨论：[Patterns for effective Acceptance Criteria](https://thoughtworks.jiveon.com/people/bansley/blog/2011/03/24/patterns-for-effective-acceptance-criteria)），发现大部分的验收标准都是以某种标准格式`Given...When...Then...`的格式写成，所以照猫画虎，AC仿佛也写得有模有样：不就是将用户的行为拆成一条条的假设场景嘛，多容易啊。但是长期以来，我都有一个疑惑：明明用一句话就可以说清楚的事情，为什么要写上这么多的废话？比如：
 
 ```
 - Given 我在xxx首页
@@ -141,7 +141,7 @@ Feature: Sign up
 		Then I should be told that the email is already registered
 		And I should be offered the option to recover my password
 ```
-是不是很熟悉的格式？是的，如果AC能直接变成自动化测试的场景，那么所有这些人读起来略显累赘的格式便很合理了——人机都可读。因为文档直接跟程序挂钩，一旦发生变更，所有的变更会先在测试场景上变更，再变更代码以让新的测试通过，从而能自动保持文档和需求的同步，**活的文档**便很好理解了。
+是不是很熟悉的格式？是的，如果AC能直接变成自动化测试的场景，那么所有这些人读起来略显累赘的格式便很合理了——人机都可读。因为文档直接跟程序挂钩，一旦发生变更，所有的变更会先在测试场景上变更，再变更代码以让新的测试通过，从而能自动保持文档和需求的同步，**活的文档** 便很好理解了。
 
 >这时，你可能会问了：Cucumber是适用于BDD的，如果我们没有采用BDD，那么AC也有必要这样写么？我们后面再说。
 
@@ -150,7 +150,7 @@ Feature: Sign up
 说完格式我们再来看内容，假设我们写AC的目的是为了更好的覆盖自动化测试的场景（不管是否采用BDD，区别主要是在于测试先行还是后发生）。所有符合`Given...When...Then...`格式的内容，都可以轻松程序化么？看一个例子（这就是我在项目上写的卡）：
 
 ```
-- Given: 我是已登陆p***k的项目经理
+- Given: 我是已登陆pxxxk的项目经理
 - When: 查看项目“任务项”
 - Then: 我看到的任务项是按照*计划到期时间*的正序排列
 - And: 已过期的任务项以红色显示
@@ -185,6 +185,11 @@ Feature: Sign up
 
 实际上，如果我们翻查各种关于user story的书籍和经验博客，并没有一个人给出是的回答。在各种敏捷User Story的示例中，AC的格式并不固定（checklist就很常见），重点是从需求的角度出发，尽可能覆盖住各种场景，保持需求整体的逻辑自洽。将场景转变为可自动化测试的场景确实也不在BA的职责范畴之内，实例化需求也更多用于测试文档的编写（Cucumber本身也是一个自动化测试的框架）。可是在一个团队内，BA写完AC，QA再将需求转化为验收测试文档算不算是一种写文档的浪费？怎样才能避免团队在文档撰写上的浪费呢？**比较推荐的方法是，在给每一张卡定AC的时候，由Tech Lead、QA和BA（three amigos）一起对故事卡进行沟通，从不同角度对场景进行完善，确保AC作为活文档的适用性**。不管项目上是否采用BDD，我个人认为，能够在实现清晰的需求描述的同时，兼顾自动化测试友好的AC场景，对整个开发是百利无害的。
 
->这篇博客虽然讨论的是User Story，但其实受BDD的影响很深，并且是基于BDD的价值的假设。然而实际上，关于BDD实践的经验我目前还很欠缺，BDD是好是坏还没有切实体验过，希望未来有机会在项目中实践吧。
+>这篇博客虽然讨论的是User Story，但其实受BDD的影响很深，并且是基于BDD的价值的假设。然而实际上，关于BDD实践的经验我目前还很欠缺，BDD是好是坏还没有切实体验过，希望未来有机会在项目中实践吧。对BDD感兴趣的人可以参考林冰玉的这篇博客：[说起BDD，你会想到什么?](http://insights.thoughtworkers.org/when-we-talk-about-bdd/)
 
-参考文档：
+参考信息：
+
+[1] Wynne, M., & Hellesøy, A. (2013).《Cucumber: 行为驱动开发指南》，人民邮电出版社
+[2] Adzic, G. (2012). 《实例化需求》，人民邮电出版社
+[3] 林冰玉，*说起BDD，你会想到什么？* http://insights.thoughtworkers.org/when-we-talk-about-bdd/
+[4] 毛超，*醒醒吧少年，只用Cucumber不能帮助你BDD* http://insights.thoughtworkers.org/bdd/

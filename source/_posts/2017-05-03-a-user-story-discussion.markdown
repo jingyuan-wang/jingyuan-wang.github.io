@@ -194,8 +194,8 @@ Feature: Sign up
 
 [2] Adzic, G. (2012). 《实例化需求》，人民邮电出版社
 
-[3] 林冰玉，*说起BDD，你会想到什么？* (http://insights.thoughtworkers.org/when-we-talk-about-bdd/)
+[3] 林冰玉，*说起BDD，你会想到什么？* [http://insights.thoughtworkers.org/when-we-talk-about-bdd/]
 
-[4] 毛超，*醒醒吧少年，只用Cucumber不能帮助你BDD* (http://insights.thoughtworkers.org/bdd/)
+[4] 毛超，*醒醒吧少年，只用Cucumber不能帮助你BDD* [http://insights.thoughtworkers.org/bdd/]
 
-[5] (https://github.com/cucumber/cucumber/wiki/Gherkin)
+[5] [https://github.com/cucumber/cucumber/wiki/Gherkin]

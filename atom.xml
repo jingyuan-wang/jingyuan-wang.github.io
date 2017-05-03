@@ -4,7 +4,7 @@
   <title><![CDATA[You are the CSS to my HTML]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2017-05-03T15:35:23+08:00</updated>
+  <updated>2017-05-03T15:38:39+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Jingyuan Wang]]></name>
@@ -244,11 +244,11 @@
 
 <p>[2] Adzic, G. (2012). 《实例化需求》，人民邮电出版社</p>
 
-<p>[3] 林冰玉，<em>说起BDD，你会想到什么？</em> [http://insights.thoughtworkers.org/when-we-talk-about-bdd/]</p>
+<p>[3] 林冰玉，<em>说起BDD，你会想到什么？</em> <a href="http://insights.thoughtworkers.org/when-we-talk-about-bdd/">http://insights.thoughtworkers.org/when-we-talk-about-bdd/</a></p>
 
-<p>[4] 毛超，<em>醒醒吧少年，只用Cucumber不能帮助你BDD</em> [http://insights.thoughtworkers.org/bdd/]</p>
+<p>[4] 毛超，<em>醒醒吧少年，只用Cucumber不能帮助你BDD</em> <a href="http://insights.thoughtworkers.org/bdd/">http://insights.thoughtworkers.org/bdd/</a></p>
 
-<p>[5] [https://github.com/cucumber/cucumber/wiki/Gherkin]</p>
+<p>[5] <a href="https://github.com/cucumber/cucumber/wiki/Gherkin">https://github.com/cucumber/cucumber/wiki/Gherkin</a></p>
 ]]></content>
   </entry>
   
@@ -259,7 +259,7 @@
     <id>http://jingyuan-wang.github.io/blog/2017/04/18/acceptance-test-anatomy</id>
     <content type="html"><![CDATA[<h1 id="section">关于验收测试的剖析</h1>
 
-<p>原文地址：https://gojko.net/2010/06/16/anatomy-of-a-good-acceptance-test/</p>
+<p>原文地址：<a href="https://gojko.net/2010/06/16/anatomy-of-a-good-acceptance-test/">https://gojko.net/2010/06/16/anatomy-of-a-good-acceptance-test/</a></p>
 
 <p>作者：Gojko Adzic</p>
 
@@ -334,7 +334,7 @@
     <id>http://jingyuan-wang.github.io/blog/2017/04/18/progressive-estimation-scale</id>
     <content type="html"><![CDATA[<h1 id="section">为什么采用渐进式估算尺</h1>
 
-<p>原文链接：http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html</p>
+<p>原文链接：<a href="http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html">http://www.yakyma.com/2012/05/why-progressive-estimation-scale-is-so.html</a></p>
 
 <p>作者：Alex Yakyma</p>
 

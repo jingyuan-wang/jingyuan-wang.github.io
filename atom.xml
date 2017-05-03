@@ -4,7 +4,7 @@
   <title><![CDATA[You are the CSS to my HTML]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2017-05-03T15:12:36+08:00</updated>
+  <updated>2017-05-03T15:25:24+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Jingyuan Wang]]></name>
@@ -133,7 +133,7 @@
 
 <p>大量的<code>Given...When...Then...</code>型AC带来的结果是，一张User Story动不动就写成一篇作文。从可读性角度来说，效果当然也不赖，从用户场景出发也可以帮助我们考虑到更全面的场景，所以虽然嫌累赘，但也不是不可以坚持。直到这次项目在邱大师的指引下，接触到了两个概念——BDD和Specification by Examples，于是豁然开朗，为什么AC要采用这样的方式来写成。在此，便需要引出一个重要概念——<strong>活文档</strong>。</p>
 
-<h4 id="section">活文档</h4>
+<h3 id="section">活文档</h3>
 
 <p>引用一下《Cucumber：行为驱动开发指南》对活文档的描述：“Cucumber测试同传统的规格说明文档一样能被利益相关人阅读和编写，然而其独特的优点在于，你可以在任何时刻给他们一台计算机让测试执行，结果会告诉你测试有多准确。这意味着，你的文档不再是一种写完后就慢慢过期的东西，而成为一种能随时反映项目真实状态的活的东西。”</p>
 
@@ -185,7 +185,7 @@
   <p>这时，你可能会问了：Cucumber是适用于BDD的，如果我们没有采用BDD，那么AC也有必要这样写么？我们后面再说。</p>
 </blockquote>
 
-<h4 id="specification-by-examples">Specification by Examples</h4>
+<h3 id="specification-by-examples">Specification by Examples</h3>
 
 <p>说完格式我们再来看内容，假设我们写AC的目的是为了更好的覆盖自动化测试的场景（不管是否采用BDD，区别主要是在于测试先行还是后发生）。所有符合<code>Given...When...Then...</code>格式的内容，都可以轻松程序化么？看一个例子（这就是我在项目上写的卡）：</p>
 
@@ -235,15 +235,20 @@
 <p>实际上，如果我们翻查各种关于user story的书籍和经验博客，并没有一个人给出是的回答。在各种敏捷User Story的示例中，AC的格式并不固定（checklist就很常见），重点是从需求的角度出发，尽可能覆盖住各种场景，保持需求整体的逻辑自洽。将场景转变为可自动化测试的场景确实也不在BA的职责范畴之内，实例化需求也更多用于测试文档的编写（Cucumber本身也是一个自动化测试的框架）。可是在一个团队内，BA写完AC，QA再将需求转化为验收测试文档算不算是一种写文档的浪费？怎样才能避免团队在文档撰写上的浪费呢？<strong>比较推荐的方法是，在给每一张卡定AC的时候，由Tech Lead、QA和BA（three amigos）一起对故事卡进行沟通，从不同角度对场景进行完善，确保AC作为活文档的适用性</strong>。不管项目上是否采用BDD，我个人认为，能够在实现清晰的需求描述的同时，兼顾自动化测试友好的AC场景，对整个开发是百利无害的。</p>
 
 <blockquote>
-  <p>这篇博客虽然讨论的是User Story，但其实受BDD的影响很深，并且是基于BDD的价值的假设。然而实际上，关于BDD实践的经验我目前还很欠缺，BDD是好是坏还没有切实体验过，希望未来有机会在项目中实践吧。对BDD感兴趣的人可以参考林冰玉的这篇博客：<a href="http://insights.thoughtworkers.org/when-we-talk-about-bdd/">说起BDD，你会想到什么?</a></p>
+  <p>这篇博客虽然讨论的是User Story，但其实很大程度上是基于BDD的价值的假设。因篇幅和主题限制，并没有对BDD本身展开过多介绍，对BDD感兴趣的人可以参考林冰玉的这篇博客：<a href="http://insights.thoughtworkers.org/when-we-talk-about-bdd/">说起BDD，你会想到什么?</a></p>
 </blockquote>
 
-<p>参考信息：</p>
+<p><strong>参考信息</strong>:</p>
 
-<p>[1] Wynne, M., &amp; Hellesøy, A. (2013).《Cucumber: 行为驱动开发指南》，人民邮电出版社
-[2] Adzic, G. (2012). 《实例化需求》，人民邮电出版社
-[3] 林冰玉，<em>说起BDD，你会想到什么？</em> http://insights.thoughtworkers.org/when-we-talk-about-bdd/
-[4] 毛超，<em>醒醒吧少年，只用Cucumber不能帮助你BDD</em> http://insights.thoughtworkers.org/bdd/</p>
+<p>[1] Wynne, M., &amp; Hellesøy, A. (2013).《Cucumber: 行为驱动开发指南》，人民邮电出版社</p>
+
+<p>[2] Adzic, G. (2012). 《实例化需求》，人民邮电出版社</p>
+
+<p>[3] 林冰玉，<em>说起BDD，你会想到什么？</em> http://insights.thoughtworkers.org/when-we-talk-about-bdd/</p>
+
+<p>[4] 毛超，<em>醒醒吧少年，只用Cucumber不能帮助你BDD</em> http://insights.thoughtworkers.org/bdd/</p>
+
+<p>[5] https://github.com/cucumber/cucumber/wiki/Gherkin</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[You are the CSS to my HTML]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2017-05-03T15:51:17+08:00</updated>
+  <updated>2017-05-03T15:53:23+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Jingyuan Wang]]></name>
@@ -225,7 +225,7 @@
 <p>同样是针对具体细节的描述，区别体现在：前一种方式，是细节的需求抽象之后再以概念表达出来；后者则是通过一个实例的表现来描述需求。</p>
 
 <blockquote>
-  <p>通常情况下，前一种表达会让我更有安全感，因为抽象之后的说明会更全面，更能切合我们对需求的定义和分析；而后者会让我忍不住担心：如果程序只cover了这一种测试情况怎么办（例如程序仅仅是让这项测试场景通过而不是完整实现了需求）？解决方式可以是添加多场景（具体可以参考这篇翻译的博客：），这里就先不详细展开了。</p>
+  <p>通常情况下，前一种表达会让我更有安全感，因为抽象之后的说明会更全面，更能切合我们对需求的定义和分析；而后者会让我忍不住担心：如果程序只cover了这一种测试情况怎么办（例如程序仅仅是让这项测试场景通过而不是完整实现了需求）？解决方式可以是添加多场景（具体可以参考Matt Wynne的《Cucumber：行为驱动开发指南》），这里就先不详细展开了。</p>
 </blockquote>
 
 <p>我们可以看到实例化需求说明之后，AC就成了一条清晰的测试场景，有实例数据input，也有了应该产生的output。既能够让开发人员理解，又利于程序的编码和自动化测试。</p>

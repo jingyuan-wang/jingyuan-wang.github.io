@@ -4,7 +4,7 @@
   <title><![CDATA[You are the CSS to my HTML]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2017-10-12T21:05:05+08:00</updated>
+  <updated>2017-10-12T21:29:24+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Jingyuan Wang]]></name>
@@ -48,7 +48,7 @@
 
 <p>根据罗兰贝格提供的销售数据，全球市场的新车销售变化表明，相比于已经进入成熟期的欧美和日韩市场，中国市场依旧处于快速增长期。在可以预见的未来几年里，不论是汽车销售还是后市场的服务都还将处于上升期。</p>
 
-<p><img src="images/2017/10Global_new_car_sales.png" alt="figure 1" /></p>
+<p><img src="images/2017/10/Global_new_car_sales.png" alt="figure 1" /></p>
 
 <p>相比于美日德地区，中国的汽车保有量稳定攀升，预计在2021年突破2亿辆。随着新车的增速逐年放缓，平均车龄将逐年上升，也就意味着对后市场服务的需求将会更高。所以不论言就深度还是广度，汽车后市场这个从2009年就开始点燃的概念还将有非常广阔的市场竞争空间和潜力。</p>
 
@@ -99,11 +99,11 @@
 <p>近几年随着汽车经济长足发展，与之相应的汽车维修业的发展非常迅猛，同时也存在市场结构不优，消费不透明、不诚信的问题。与汽车后市场相关的政策不断出台，推动汽车维修业从规模扩张型向质量效益型的转变。与零配件发展最有直接相关的政策有：</p>
 
 <ul>
-  <li>[<strong>《关于促进汽车维修业转型升级提升服务质量的指导意见》</strong>]（http://hsc.caam.org.cn/hsc/sell-out2.html）</li>
+  <li><a href="http://hsc.caam.org.cn/hsc/sell-out2.html"><strong>《关于促进汽车维修业转型升级提升服务质量的指导意见》</strong></a></li>
   <li>《汽车零部件的统一编码与标识》</li>
-  <li>[《汽车维修技术信息公开实施管理办法》]http://www.gov.cn/xinwen/2015-10/09/content_2944430.htm</li>
+  <li><a href="http://www.gov.cn/xinwen/2015-10/09/content_2944430.htm">《汽车维修技术信息公开实施管理办法》</a></li>
   <li>《关于汽车业的反垄断指南》</li>
-  <li>[<strong>《汽车销售管理办法》2017年7月1日生效</strong>]（)</li>
+  <li>[<strong>《汽车销售管理办法》2017年7月1日生效</strong>]</li>
 </ul>
 
 <p>政策内容可以总结为以下几点：</p>

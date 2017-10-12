@@ -33,11 +33,11 @@ categories:
 
 根据罗兰贝格提供的销售数据，全球市场的新车销售变化表明，相比于已经进入成熟期的欧美和日韩市场，中国市场依旧处于快速增长期。在可以预见的未来几年里，不论是汽车销售还是后市场的服务都还将处于上升期。
 
-![figure 1](images/Global_new_car_sales.png)
+![figure 1](images/2017/10/Global_new_car_sales.png)
 
 相比于美日德地区，中国的汽车保有量稳定攀升，预计在2021年突破2亿辆。随着新车的增速逐年放缓，平均车龄将逐年上升，也就意味着对后市场服务的需求将会更高。所以不论言就深度还是广度，汽车后市场这个从2009年就开始点燃的概念还将有非常广阔的市场竞争空间和潜力。
 
-![figure 2](images/Global_car_quantity.png)
+![figure 2](images/2017/10/Global_car_quantity.png)
 
 戴姆勒的销售数据也表明，中国区正在成为带动整个戴姆勒汽车销售的重要牵引力，2016年的年报中也特意提及了中国市场的上升和将来，有意者可以参阅[Daimler AG Annual report 2016](https://www.daimler.com/documents/investors/reports/annual-report/daimler/daimler-ir-annualreport-2016.pdf)
 
@@ -110,31 +110,31 @@ categories:
 
 戴姆勒集团（Daimler AG）是一家总部位于德国斯图加特的汽车公司。Daimler AG的整体业务被划分为：Mercedes-Benz Cars，Daimler Trucks，Mercedes-Benz Vans，Daimler Buses，以及Daimler Finance。
 
-![figure 5](images/Daimler_divisions.png)
+![figure 5](images/2017/10/Daimler_divisions.png)
 
 近五年股价如图，市值约720亿欧元。
 
-![figure 6](images/Daimler_share_price.png)
+![figure 6](images/2017/10/Daimler_share_price.png)
 
 蔡澈在致股东的信中表示2016年是奔驰最成功的一年。诸多因素的作用下，2016年奔驰重新夺回豪华车销量第一的宝座。根据年报，2016年Daimler AG 的收入为1532亿欧元，较2015年上涨3%，净利率5.7%。按照业务模块的收入如下：
 
-![figure 7](images/revenue_by_division.png)
+![figure 7](images/2017/10/revenue_by_division.png)
 
 乘用车和卡车业务是其收入的主要来源，我们重点关注乘用车业务。下图为Mercedes-Benz Cars在各主要市场的市场份额，在德国的占有率最高，达10%；随着中国经济发展，2016年的汽车销售市场，奔驰车在中国的市场占有率也达到了2.1%，跟北美市场相同。
 
-![figure 8](images/MB_cars_market.png)
+![figure 8](images/2017/10/MB_cars_market.png)
 
 Mercedes-Benz Cars的销量组成如下图所示，可以看出以SUV系列和C系轿车最受市场欢迎：
 
-![figure 9](images/MB_cars_sales.png)
+![figure 9](images/2017/10/MB_cars_sales.png)
 
 2016年MB Cars在全球销售2198000辆，其中中国销售494000辆，在全球占比约22%。再看近五年，从2013年开始，奔驰在中国的销量每年涨幅都超过20%，上涨势头依旧强劲。
 
-![figure 10](images/MB_cars_sales_in_China.png)
+![figure 10](images/2017/10/MB_cars_sales_in_China.png)
 
 授权经销商网络的发展数量在经过2013年大幅上涨后，增速已经开始放缓，特别是在今年新的汽车销售政策出台后，经销商集团或将面临战略转型。
 
-![figure 11](images/MB_cars_network_in_China.png)
+![figure 11](images/2017/10/MB_cars_network_in_China.png)
 
 ### 北京梅赛德斯-奔驰销售服务有限公司
 

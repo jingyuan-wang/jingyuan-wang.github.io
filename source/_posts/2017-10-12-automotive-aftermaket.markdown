@@ -5,7 +5,7 @@ date: 2017-10-12 18:51:41 +0800
 comments: true
 categories:
 ---
-# 关于汽车后市场的一些背景知识
+# 关于汽车后市场
 
 ## 汽车后市场
 
@@ -112,7 +112,7 @@ categories:
 
 ![figure 5](images/2017/10/Daimler_divisions.png)
 
-近五年股价如图，市值约720亿欧元。
+近五年股价如图，市值约720亿欧元。单从市值来看，跟大众不相上下，在汽车行业仅次于丰田。
 
 ![figure 6](images/2017/10/Daimler_share_price.png)
 

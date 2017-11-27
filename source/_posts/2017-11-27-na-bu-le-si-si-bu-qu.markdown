@@ -5,10 +5,9 @@ date: 2017-11-27 23:43:09 +0800
 comments: true
 categories:
 ---
-# 离开的终会回来吧
-## 《那不勒斯四部曲》读后
+# 《那不勒斯四部曲》读后
 
-最终还是决定为这本书留下些想法（无剧透）：
+## 离开的最终会回来
 
 ![image](https://img3.doubanio.com/lpic/s29535271.jpg)
 

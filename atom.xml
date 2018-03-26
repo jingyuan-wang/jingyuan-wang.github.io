@@ -4,7 +4,7 @@
   <title><![CDATA[You are the CSS to my HTML]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2018-03-26T18:05:48+08:00</updated>
+  <updated>2018-03-26T18:09:29+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Jingyuan Wang]]></name>
@@ -42,7 +42,11 @@
   <p>… an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party.</p>
 </blockquote>
 
-<p>这是中本聪对比特币系统的说明，指出了比特币的关键：以加密证明替代信任机制，让交易双方实现直接交易。也就是说，在这个电子支付系统里，不再有一个承载信任的第三方来见证和记录交易的发生，谁来呢？所有人。那货币由谁来发行呢？每个人都可以。这正是比特币得名“去中心化货币”的由来。但实际上，中本聪本人全篇从未提及到任何decentralize相关的词，作为一名严谨的程序员，他将这个系统描述成一个点对点的电子交易系统。至于到底去不去中心，取决于实际应用。导论的最后，中本聪指出了这个系统的大前提：</p>
+<p>这是中本聪对比特币系统的说明，指出了比特币的关键：以加密证明替代信任机制，让交易双方实现直接交易。也就是说，在这个电子支付系统里，不再有一个承载信任的第三方来见证和记录交易的发生，谁来呢？所有人。那货币由谁来发行呢？每个人都可以。这正是比特币得名“去中心化货币”的由来。但实际上，中本聪本人全篇从未提及到任何decentralize相关的词，作为一名严谨的程序员，他将这个系统描述成一个点对点的电子交易系统。至于到底去不去中心，取决于实际应用。</p>
+
+<p><em>题外话：在现在的媒体和政治语境下，“去中心化”是个非常容易戳到大众G点的词。但凡看到，动辄便上升到各种权力的去中心化，仿佛只要握有去中心化的技术，就可以构建出一个平等自由的乌托邦。比特币信徒就曾经大肆利用“去中心化”鼓吹比特币的乌托邦前景，导致比特币价格的蹿升。可是不管技术怎么改变，人始终是人。</em></p>
+
+<p>导论的最后，中本聪指出了这个系统的大前提：</p>
 
 <blockquote>
   <p>The system is secure as long as honest nodes collectively control more CPU power than any cooperating group of attacker nodes.</p>
@@ -59,8 +63,6 @@
 </ul>
 
 <p>那么比特币是如何承担起电子货币的功能的呢？</p>
-
-<p><em>题外话：在现在的媒体和政治语境下，“去中心化”是个非常容易戳到大众G点的词。但凡看到，动辄便上升到各种权力的去中心化，仿佛只要握有去中心化的技术，就可以构建出一个平等自由的乌托邦。比特币信徒就曾经大肆利用“去中心化”鼓吹比特币的乌托邦前景，导致比特币价格的蹿升。可是不管技术怎么变，人始终是人，不是么？</em></p>
 
 <div class="footnotes">
   <ol>

@@ -1,79 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>《比特币白皮书》解读（一） - You are the CSS to my HTML</title>
-	<meta name="author" content="Jingyuan Wang">
-
-	
-	<meta name="description" content="导读 本文写作目的是从非技术角度解释比特币的含义，向没有技术背景的人们说明比特币的创造目的和意义。文中所有想法都只是对著名的比特币白皮书——也就是中本聪（Satoshi Nakamoto）于2008年10月发布的论文《比特币：一种点对点的电子现金系统》的解读。适合非技术人员对比特币的入门学习。 &hellip;">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link href="" rel="alternate" title="You are the CSS to my HTML" type="application/atom+xml">
-	<link rel="canonical" href="">
-	<link href="/favicon.png" rel="shortcut icon">
-	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	
-</head>
-
-
-<body>
-	<header id="header" class="inner"><h1><a href="/">You are the CSS to my HTML</a></h1>
-<nav id="main-nav"><ul class="main">
-	<li><a href="/">Blog</a></li>
-	<li><a href="/blog/archives">Archives</a></li>
-</ul>
-</nav>
-<nav id="mobile-nav">
-	<div class="alignleft menu">
-		<a class="button">Menu</a>
-		<div class="container"><ul class="main">
-	<li><a href="/">Blog</a></li>
-	<li><a href="/blog/archives">Archives</a></li>
-</ul>
-</div>
-	</div>
-	<div class="alignright search">
-		<a class="button"></a>
-		<div class="container">
-			<form action="https://www.google.com/search" method="get">
-				<input type="text" name="q" results="0">
-				<input type="hidden" name="q" value="site:jingyuan-wang.github.io">
-			</form>
-		</div>
-	</div>
-</nav>
-<nav id="sub-nav" class="alignright">
-	<div class="social">
-		
-		
-		
-		
+  <title><![CDATA[Category: blockchain | You are the CSS to my HTML]]></title>
+  <link href="http://jingyuan-wang.github.io/blog/categories/blockchain/atom.xml" rel="self"/>
+  <link href="http://jingyuan-wang.github.io/"/>
+  <updated>2018-03-26T17:58:43+08:00</updated>
+  <id>http://jingyuan-wang.github.io/</id>
+  <author>
+    <name><![CDATA[Jingyuan Wang]]></name>
     
-		
-		
-		
-		
-		
-    
-	</div>
-	<form class="search" action="https://www.google.com/search" method="get">
-		<input class="alignright" type="text" name="q" results="0">
-		<input type="hidden" name="q" value="site:jingyuan-wang.github.io">
-	</form>
-</nav>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-</header>
-	
-		
-	
-	<div id="content" class="inner"><article class="post">
-	<h2 class="title">《比特币白皮书》解读（一）</h2>
-	<div class="entry-content"><h2 id="section">导读</h2>
+  
+  <entry>
+    <title type="html"><![CDATA[《比特币白皮书》解读（一）]]></title>
+    <link href="http://jingyuan-wang.github.io/blog/2018/03/26/bitcoin-bubbler/"/>
+    <updated>2018-03-26T17:10:22+08:00</updated>
+    <id>http://jingyuan-wang.github.io/blog/2018/03/26/bitcoin-bubbler</id>
+    <content type="html"><![CDATA[<h2 id="section">导读</h2>
 
 <p>本文写作目的是从非技术角度解释比特币的含义，向没有技术背景的人们说明比特币的创造目的和意义。文中所有想法都只是对著名的比特币白皮书——也就是中本聪（Satoshi Nakamoto）于2008年10月发布的论文<a href="https://bitcoin.org/bitcoin.pdf">《比特币：一种点对点的电子现金系统》</a>的解读。适合非技术人员对比特币的入门学习。</p>
 
@@ -124,56 +69,7 @@
     </li>
   </ol>
 </div>
-</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-Mar 26th, 2018</div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/blockchain/'>blockchain</a>
-
-
-</div>
-	
-</div>
-</article>
-
-	<div class="share">
-	<div class="addthis_toolbox addthis_default_style ">
-		
-		
-		
-		
-	</div>
-	
-</div>
-
-
-</div>
-	<footer id="footer" class="inner">Copyright &copy; 2018
-
-    Jingyuan Wang
-
-</footer>
-	<script src="/javascripts/slash.js"></script>
-<script src="/javascripts/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-	$('.fancybox').fancybox();
-})(jQuery);
-</script> <!-- Delete or comment this line to disable Fancybox -->
-
-
-
-
-
-
-</body>
-</html>
+]]></content>
+  </entry>
+  
+</feed>

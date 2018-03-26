@@ -4,7 +4,7 @@
   <title><![CDATA[You are the CSS to my HTML]]></title>
   <link href="http://jingyuan-wang.github.io/atom.xml" rel="self"/>
   <link href="http://jingyuan-wang.github.io/"/>
-  <updated>2018-03-19T18:35:11+08:00</updated>
+  <updated>2018-03-26T17:18:47+08:00</updated>
   <id>http://jingyuan-wang.github.io/</id>
   <author>
     <name><![CDATA[Jingyuan Wang]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[《比特币白皮书》解读（一）]]></title>
+    <link href="http://jingyuan-wang.github.io/blog/2018/03/26/bitcoin-bubbler/"/>
+    <updated>2018-03-26T17:10:22+08:00</updated>
+    <id>http://jingyuan-wang.github.io/blog/2018/03/26/bitcoin-bubbler</id>
+    <content type="html"><![CDATA[<h2 id="section">导读</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>本文写作目的是从非技术角度解释比特币的含义，向没有技术背景的人们说明比特币的创造目的和意义。文中所有想法都只是对著名的比特币白皮书——也就是中本聪（Satoshi Nakamoto）于2008年10月发布的论文[《比特币：一种点对点的电子现金系统》</td>
+      <td>https://bitcoin.org/bitcoin.pdf]的解读。适合非技术人员对比特币的入门学习。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="section-1">从黄金到电子货币</h2>
+
+<p>人类社会的交易历史可以进行简单概括，从原始社会的物物交易，到发展出最原始的双方都能接受的原始货币物品，例如牲畜、宝石、贝壳等等，这里从一开始就存在一个共识，那就是“我们无法信任彼此”，在这个大前提之下，货币逐渐从原始形态进化为贵金属，进而到演化纸币，和支撑现在“无现金时代”的电子货币。</p>
+
+<p>在这个过程中，货币不再是代表物品本身（比如铸币所用的黄金和纸币）的价值，而是一种象征符号，代表了在一个国家或集体内公认的可交易价值。因为央行和国家权力的背书，纸币乃至银行帐上的电子货币都可被看作是一种中心化的货币。怎么理解这个中心化呢？以现在的电子银行为例，如果A给B转账1000元，如果不存在现金的传递和接收，如何证明这笔交易的发生呢？在“我们无法信任彼此”的前提下，显然不可能由A或者B来记录这笔交易，因此就会诉诸一个双方都能信赖的第三方，也就是由银行记录：A账户 - 1000，B账户 + 1000，如果银行发现A的账户余额小于1000，就会判定这笔交易不被执行。银行就是这个中心化的记账系统，承载了所有交易主体的信任，确保所有交易方得以在这个系统架构下正常交易往来。而维持这个第三方持续运行的成本可被视为我们为这个信任机制所付出的代价。</p>
+
+<p>在导言中，中本聪提到：</p>
+
+<blockquote>
+  <p>… and there is a broader cost in the loss of ability to make non-reversible payments for non-reversible services.</p>
+</blockquote>
+
+<p>看了几篇中文翻译，对这句话的表达都感觉不够准确。我的理解是，我们所依赖的这套中心化的记账系统（比如银行），任何交易和支付都是可逆的（reversible），所以一旦有纠纷产生，这个第三方会成为值得信赖的仲裁机构，由它来判定交易是否成立，这对于应对各种金融犯罪至关重要。但也正如前面所述，我们为了保证每笔交易的可逆不得不付出巨大的成本来维持这个信任机制。而中本聪指出，针对那些不可逆的服务产生的不需要可逆的支付，我们依旧沿用这套高成本的可逆支付机制，某种程度上可被视为一种广义上的成本。由此我们也可以推断，这里中本聪其实开篇就已经暗暗指出了比特币的应用场景（同时也是应用瓶颈）：不可逆服务的不可逆交易。也道出了为什么要创造出比特币：一种更低成本的电子支付机制。但是看到现在比特币大热所带来的“指数式上升的挖矿成本”，再看看比特币本身的支付功能也完全被投机化了之后，倒是不知中本聪本人作何感想。</p>
+
+<h2 id="section-2">点对点的交易系统</h2>
+
+<p>如果我们将货币广义上理解为这样一种在整个交易体系中有共识的可被量化的价值的象征，那么比特币是一种什么样的象征符号呢？</p>
+
+<blockquote>
+  <p>… an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party.</p>
+</blockquote>
+
+<p>这是中本聪对比特币系统的说明，指出了比特币的关键：以加密证明替代信任机制，让交易双方实现直接交易。也就是说，在这个电子支付系统里，不再有一个承载信任的第三方来见证和记录交易的发生，谁来呢？所有人。那货币由谁来发行呢？每个人都可以。这正是比特币得名“去中心化货币”的由来。但实际上，中本聪本人全篇从未提及到任何decentralize相关的词，作为一个严谨的理科生，他将这个系统描述成一个点对点的电子交易系统。至于到底去不去中心，取决于实际应用。导论的最后，中本聪指出了这个系统的大前提：</p>
+
+<blockquote>
+  <p>The system is secure as long as honest nodes collectively control more CPU power than any cooperating group of attacker nodes.</p>
+</blockquote>
+
+<p>如果进行攻击的节点集团掌握的算力超过了诚实的节点，会发生什么呢？且留着这个问题，容后细说。</p>
+
+<p><code>最后插个题外话，在现在的媒体和政治语境下，“去中心化”是个非常容易戳到大众G点的词。但凡看到，动辄便上升到各种权力的去中心化，仿佛只要握有去中心化的技术，就可以构建出一个平等自由的乌托邦。比特币信徒就曾经大肆利用“去中心化”鼓吹比特币的乌托邦前景，导致比特币价格的蹿升。可是不管技术怎么变，人始终是人，不是么？</code></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[翻译这件小事]]></title>

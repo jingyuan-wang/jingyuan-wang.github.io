@@ -61,7 +61,7 @@ UTXO是 *unspent transaction output* 的缩写，顾名思义，也就是未花�
 
 >Question：怎么确保在全球范围内使用统一的时间来记录交易发生的先后顺序？
 
-![timestamped block chain](images/2018/04/timestamped_block.png)
+![timestamped block chain](images/2018/04/Timestamped_block.png)
 
 ##总结
 

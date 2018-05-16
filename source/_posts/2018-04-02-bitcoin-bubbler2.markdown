@@ -66,5 +66,3 @@ UTXO是 *unspent transaction output* 的缩写，顾名思义，也就是未花�
 ##总结
 
 回顾一下整个交易流程，通过非对称加密，确保交易双方点对点的交易是真实不可被篡改的；通过区块链的记账，确保每一分钱都可被溯源；通过时间戳确保同一笔钱不会被花两次。也就是说，比特币以信息化的方式成功模拟了真实世界中价值转移的过程，非常牛逼。
-
-https://press.one/p/address/v?s=a0fcee242a1bfe6ef438cf5828234926c9ecc6e387f9c2739ac40977358cf6bd5d06972dfba1ab0ce33b929118432a13d3c8db7f183dcaab816ffc8bf191d3e10&h=9197f0900a0b7029053274e805d01a45e4c79f68e04e5ff9a5b367ffa2b05cd1&a=67904a7dd78fa08d9f8992b2e188715c85035d74&f=P1&v=2

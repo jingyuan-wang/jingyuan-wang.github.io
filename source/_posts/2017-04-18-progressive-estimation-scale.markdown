@@ -78,3 +78,5 @@ $$I(A,B) = log(L/P)$$
 虽然看起来，要到达一个更好的估算基准，会有一段距离，但我们有了一个简单蠢笨但是可靠的方法作为开始。简单地在一个*sprint*给每个队员分配*8*个故事点，不是一个糟糕的初始估计值。事实上，考虑到上面的假设，当团队成员*N*从*4*到*8*变化时，我们得到的故事点$N×8$正好从*32*到*64*变化不等。
 
 想要了解更多估算基准，可以参考 （[Agile Software Requirements Enterprise Development](http://www.amazon.com/Agile-Software-Requirements-Enterprise-Development/dp/0321635841) 第八章，敏捷估算和速率）
+
+https://press.one/p/address/v?s=a0fcee242a1bfe6ef438cf5828234926c9ecc6e387f9c2739ac40977358cf6bd5d06972dfba1ab0ce33b929118432a13d3c8db7f183dcaab816ffc8bf191d3e10&h=9197f0900a0b7029053274e805d01a45e4c79f68e04e5ff9a5b367ffa2b05cd1&a=67904a7dd78fa08d9f8992b2e188715c85035d74&f=P1&v=2
